@@ -19,3 +19,40 @@ ol {
 img {
     max-width: 100%;
 }
+/*utilities*/
+.m-t{
+    margin-top: 10px;
+}
+i {
+    margin-right: 7px;
+}
+hr{
+    color: gray;
+}
+
+/*layout*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+/*sidebar*/
+
+.sidebar{
+    width: 240px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.first-menu{
+    color: white;
+    padding: 15px 0;
+}
+.list-item li{
+    padding: 5px;
+}
