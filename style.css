@@ -1,8 +1,20 @@
+:root {
+	--brand-color: #adff2f;
+	--black: #000000;
+	--dark-gray: #282828;
+	--deep-blue: #141922;
+	--white: #ffffff;
+	--sidebar-width: 230px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+body {
+	background-color: var(--deep-blue);
+	color: white;}
 
 /*reset rules*/
 
@@ -32,21 +44,35 @@ hr{
 
 /*layout*/
 
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: lightgrey;
+.app_wrap{
+    height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.app_body{
+    flex-grow: 1;
+	display: flex;
+}
+.app_player{
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
 }
 
+.app_content{
+    flex-grow: 1;
+}
 /*sidebar*/
 
-.sidebar{
+.app_sidebar{
     width: 240px;
     background-color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 
 }
 .first-menu{
@@ -56,3 +82,10 @@ body{
 .list-item li{
     padding: 5px;
 }
+/*PLAYER*/
+.app_player .player{
+    width: 45%;
+}
+
+
+
