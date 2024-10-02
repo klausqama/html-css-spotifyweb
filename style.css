@@ -14,7 +14,15 @@
 }
 body {
 	background-color: var(--deep-blue);
-	color: white;}
+	color: white;
+    font-family: "Open Sans", sans-serif;
+}
+button{
+    background-color: transparent;
+	border: none;
+	color: currentColor;
+}
+
 
 /*reset rules*/
 
@@ -58,7 +66,7 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 
 .app_content{
@@ -67,7 +75,7 @@ hr{
 /*sidebar*/
 
 .app_sidebar{
-    width: 240px;
+    width: var(--sidebar-width);
     background-color: black;
     padding: 20px;
     display: flex;
@@ -82,10 +90,61 @@ hr{
 .list-item li{
     padding: 5px;
 }
+.footer_sidebar{
+    margin-top: 149px;
+}
 /*PLAYER*/
 .app_player .player{
     width: 45%;
 }
 
+.player_controls >*{
+    font-size: 25px;
+}
+.track{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: var(--sidebar-width);
+}
+.track_info{
+    flex-grow: 1;
+}
+.track_img{
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+.track_img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.player_controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.player_slide{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px;
+}
+.player_controls .icon_play{
+    font-size: 30px;
+}
 
-
+.slider {
+	height: 4px;
+	width: 120px;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.icon-volume{
+    display: flex;
+    align-items: center;
+}
