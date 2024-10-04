@@ -251,3 +251,12 @@ text-align: center;
     margin-right: 10px;
     
 }
+.card_popolarartist {
+overflow: hidden;
+width: 150px;
+text-align: center;
+}
+.card_popolarartist img{
+    height: auto;
+    border-radius: 999px;
+}
