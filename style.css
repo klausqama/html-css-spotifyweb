@@ -17,6 +17,7 @@ body {
 	background-color: var(--deep-blue);
 	color: white;
     font-family: "Open Sans", sans-serif;
+    height: 0;
 }
 button{
     background-color: transparent;
@@ -107,6 +108,12 @@ hr{
     bottom: -2px;
     left: -16px;
     background-color: var(--brand-color);
+}
+.list-item >* {
+    color: var(--light-gray);
+}
+.footer_sidebar .download {
+    color: var(--light-gray);
 }
 
 /*player*/
@@ -202,7 +209,7 @@ hr{
     left: 25px;
     background-color: var(--brand-color);
 }
-.recently_title {
+.section_title {
 padding: 20px 0;
 margin-left: 8px;
 }
@@ -214,6 +221,7 @@ margin-left: 8px;
     
 }
 /*card*/
+/*first Section*/
 .card_song{
 overflow: hidden;
 width: 150px;
@@ -231,4 +239,15 @@ text-align: center;
 .card_song p:first-of-type{
     color: var(--white);
     font-weight: bold;
+}
+/*second section*/
+.section_p{
+    color: var(--light-gray);
+}
+.mix_container{
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }
